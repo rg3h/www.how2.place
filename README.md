@@ -14,12 +14,13 @@
 ⠈⠻⠿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 -->
 <img src="./public/assets/images/logo/logo.png" height="128" align="left" valign="top"
-  alt="how2.place" />
-<br>
-<b>how2.place</b><br>
+  alt="www.how2.place" />
+<!-- using <span/> to break up the text so github does not automatically create a link -->
+<b>www<span/>.<span/>how2.place</b><br>
 <sup><sub>
 yep, yep, yep.
 </sub></sup>
 <br>
 
-www&#46;how2&#46;place is a list of howTo recipes.
+<!-- using <span/> to break up the text so github does not automatically create a link -->
+www<span/>.<span/>how2.place is a collection of useful instructions
