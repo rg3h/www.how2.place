@@ -18,11 +18,8 @@
 <br>
 <b>how2.place</b><br>
 <sup><sub>
-HTML/CSS/JS project how2.place
-&nbsp;&nbsp;
-<a href="https://rg3h.github.io/how2.place/index.html">
-https://rg3h.github.io/how2.place</a>
+yep, yep, yep.
 </sub></sup>
 <br>
 
-www.how2.place is a list of howTo recipes.
+www&#46;how2&#46;place is a list of howTo recipes.
