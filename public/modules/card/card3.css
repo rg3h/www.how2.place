@@ -1,0 +1,120 @@
+/** card3.css **/
+:root {
+  --card3BorderRadius: 0.5rem;
+  --card3IconHeight: 3rem;
+}
+
+/* is an anchor */
+.card3Container {
+  background: rgb(250, 250, 250);
+  border-radius: var(--card3BorderRadius);
+  border: solid 1px rgb(200, 200, 200);
+  color: black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0 0.25rem 0 0;
+  text-decoration: none;
+  text-underline-offset: 0.25rem;
+  transition-duration: 0.25s;
+  transition-property: box-shadow;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+}
+
+.card3Container:hover {
+  background: white;
+  border: solid 1px rgb(200, 200, 200);
+  border-radius: var(--card3BorderRadius);
+  box-shadow: 2px 2px 2px rgba(100, 100, 100, 0.25);
+}
+
+.card3TopLine {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.card3Title {
+  color: black;
+  font-family: var(--fontFamily);
+  font-size: 1.1rem;
+  max-width: 50%;
+  min-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card3Body {
+  display: flex;
+  gap: 1rem;
+}
+
+.card3Img {
+  border-radius: var(--card3BorderRadius);
+  height: var(--card3IconHeight);
+}
+
+.card3CategoryList {
+  color: rgb(0, 100, 0);
+  font-family: var(--fontFamily);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 30%;
+  min-width: 30%;
+}
+
+.card3BodyRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card3ShortDescription {
+  color: black;
+  display: block;
+  display: -webkit-box;
+  opacity: 0;
+  font-family: var(--fontFamilyLight);
+  font-size: 0.9rem;
+  height: 0;
+  line-height: 1.1rem;
+  margin: 0 0 0 calc(var(--cardIconHeight) + 1rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 3; /* Number of lines to show */
+  transition-duration: 0.25s;
+  transition-property: height, opacity;
+  transition-timing-function: ease-in-out;
+}
+
+/*** uncomment if you want to show the short description on hover
+.card3Container:hover .card3ShortDescription {
+  display: block;
+  display: -webkit-box;
+  margin: 0 0 0.5rem calc(var(--cardIconHeight) + 1rem);
+  opacity: 1;
+  height: 3rem;
+}
+***/
+
+.card3Date{
+  color: rgb(100, 100, 100);
+  flex-grow: 1;
+  font-family: var(--fontFamilyLight);
+  font-size: 0.75rem;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

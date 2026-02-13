@@ -1,0 +1,80 @@
+/** card2.css **/
+:root {
+  --card2BorderRadius: 1rem;
+  --card2Height: 8.5rem;
+}
+
+/* is an anchor */
+.card2Container {
+  background: white;
+  background: rgb(255, 255, 250);
+  border-radius: var(--card2BorderRadius);
+  border: solid 1px rgb(200, 200, 200);
+  color: black;
+  cursor: pointer;
+  display: flex;
+  height: var(--card2Height);
+  max-height: var(--card2Height);
+  min-height: var(--card2Height);
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  overflow-y: scroll;
+  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  text-decoration: none;
+  text-underline-offset: 0.25rem;
+  transition-duration: 0.25s;
+  transition-property: box-shadow;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.card2Container:hover {
+  border: solid 1px rgb(200, 200, 200);
+  border-radius: var(--card2BorderRadius);
+  box-shadow: 3px 3px 3px rgba(100, 100, 100, 0.5);
+}
+
+.card2Title {
+  color: black;
+  font-family: var(--fontFamily);
+  font-size: 1.1rem;
+}
+
+.card2Body {
+  display: flex;
+  gap: 1rem;
+}
+
+.card2Img {
+  border-radius: var(--card2BorderRadius);
+  height: 6rem;
+}
+
+.card2BodyRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card2ShortDescription {
+  color: black;
+  display: block;
+  display: -webkit-box;
+  font-family: var(--fontFamilyLight);
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 3; /* Number of lines to show */
+}
+
+.card2Date{
+  color: rgb(100, 100, 100);
+  font-family: var(--fontFamilyLight);
+  font-size: 0.75rem;
+}

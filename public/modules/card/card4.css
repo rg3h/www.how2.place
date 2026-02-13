@@ -1,0 +1,115 @@
+/** card4.css **/
+:root {
+  --card4BorderRadius: 0.5rem;
+  --card4IconHeight: 3rem;
+}
+
+/* is an anchor */
+.card4Container {
+  background: rgb(255, 255, 250);
+  background: white;
+  border-radius: var(--card4BorderRadius);
+  border: solid 1px rgb(200, 200, 200);
+  color: black;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0 0.25rem 0 0;
+  text-decoration: none;
+  text-underline-offset: 0.25rem;
+  transition-duration: 0.25s;
+  transition-property: box-shadow;
+  transition-timing-function: ease-in-out;
+  width: 100%;
+}
+
+.card4TopLine {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.card4Container:hover {
+  border: solid 1px rgb(200, 200, 200);
+  border-radius: var(--card4BorderRadius);
+  box-shadow: 3px 3px 3px rgba(100, 100, 100, 0.5);
+}
+
+.card4Title {
+  color: black;
+  font-family: var(--fontFamily);
+  font-size: 1.1rem;
+  max-width: 50%;
+  min-width: 50%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card4Body {
+  display: flex;
+  gap: 1rem;
+}
+
+.card4Img {
+  border-radius: var(--card4BorderRadius);
+  height: var(--card4IconHeight);
+}
+
+.card4CategoryList {
+  color: rgb(0, 100, 0);
+  font-family: var(--fontFamily);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 30%;
+  min-width: 30%;
+}
+
+.card4BodyRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card4ShortDescription {
+  color: black;
+  display: block;
+  display: -webkit-box;
+  opacity: 0;
+  font-family: var(--fontFamilyLight);
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  margin: 0 0 0.5rem calc(var(--card4IconHeight) + 1rem);
+  overflow: hidden;
+  text-overflow: ellipsis;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 1; /* Number of lines to show */
+  transition-duration: 0.25s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+
+.card4Container:hover .card4ShortDescription {
+  display: block;
+  display: -webkit-box;
+  opacity: 1;
+}
+
+.card4Date{
+  color: rgb(100, 100, 100);
+  flex-grow: 1;
+  font-family: var(--fontFamilyLight);
+  font-size: 0.75rem;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
