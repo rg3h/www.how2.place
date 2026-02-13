@@ -6,8 +6,17 @@
   justify-content: center;
 }
 
+.errorImg {
+  margin-bottom: 2rem;
+}
+
+.errorCode {
+  font-size: 5rem;
+  margin-top: -1rem;
+}
+
 .errorMsg {
-  margin-top: -2rem;
+  margin-top: -1rem;
 }
 
 .titleDate {

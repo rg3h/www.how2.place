@@ -1,12 +1,12 @@
 /** card.css **/
 :root {
   --cardBorderRadius: 0.5rem;
-  --cardHeight: 3rem;
+  --cardHeight: 4rem;
+  --cardDateWidth: 5rem;
 }
 
 /* is an anchor */
 .cardContainer {
-  align-items: center;
   background-color: rgb(250, 250, 250);
   border-radius: var(--cardBorderRadius);
   border: solid 1px rgb(200, 200, 200);
@@ -18,10 +18,8 @@
   gap: 1rem;
   height: var(--cardHeight);
   margin: 0 0 1rem 0;
-  max-height: var(--cardHeight);
-  min-height: var(--cardHeight);
-  overflow-y: scroll;
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
   text-decoration: none;
   text-underline-offset: 0.25rem;
   transition-duration: 0.25s;
@@ -37,25 +35,19 @@
   box-shadow: 3px 3px 3px rgba(100, 100, 100, 0.5);
 }
 
-
-.cardImg {
+.cardLogo {
   border-radius: var(--cardBorderRadius);
-  height: 6rem;
+  height: calc(var(--cardHeight) - 1rem);
 }
 
-.cardRightContainer {
+.cardDetails {
+  flex-grow: 1;
 }
 
 .cardTitle {
   color: black;
   font-size: 1.1rem;
   margin-top: -0.25rem;
-}
-
-.cardSubTitle {
-  color: rgb(80, 80, 80);
-  font-size: 0.85rem;
-  margin-bottom: 0.5rem;
 }
 
 .cardShortDescription {
@@ -69,14 +61,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
  -webkit-box-orient: vertical;
- -webkit-line-clamp: 3; /* Number of lines to show */
+ -webkit-line-clamp: 1; /* Number of lines to show */
 }
 
 .cardDate{
   color: rgb(100, 100, 100);
   font-family: var(--fontFamilyLight);
   font-size: 0.75rem;
-}
-
-.cardButton {
+  min-width: var(--cardDateWidth);
+  max-width: var(--cardDateWidth);
+  text-align: right;
+  width: var(--cardDateWidth);
 }
